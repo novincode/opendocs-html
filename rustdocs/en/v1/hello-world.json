@@ -1,0 +1,7 @@
+{
+  "title": "Hello World in Rust | Your First Rust Docs Page",
+  "description": "Learn how to write and document your first Rust program! This fun, beginner-friendly guide shows you how to create a documented \"Hello, World!\" library and view your docs with cargo doc.\n",
+  "slug": "hello-world",
+  "version": "v1",
+  "date": "2025-04-22T00:00:00.000Z"
+}
