@@ -1,1 +1,196 @@
-Error occurred while rendering MDX:
+<h1>🦀 Getting Started with Rust</h1>
+<div data-slot="alert" role="alert" class="relative w-full rounded-lg border px-4 py-3 text-sm grid has-[&gt;svg]:grid-cols-[calc(var(--spacing)*4)_1fr] grid-cols-[0_1fr] has-[&gt;svg]:gap-x-3 gap-y-0.5 items-start [&amp;&gt;svg]:size-4 [&amp;&gt;svg]:translate-y-0.5 [&amp;&gt;svg]:text-current"><div data-slot="alert-title" class="col-start-2 line-clamp-1 min-h-4 font-medium tracking-tight">Welcome!</div><div data-slot="alert-description" class="text-muted-foreground col-start-2 grid justify-items-start gap-1 text-sm [&amp;_p]:leading-relaxed"><p>Whether you&#x27;re here to build lightning-fast web apps, master systems programming, or just explore a powerful new language — <strong>Rust</strong> has your back.</p></div></div>
+<p>In this quick guide, you&#x27;ll set up your environment and write your very first Rust program. It&#x27;s gonna be smooth, fun, and beginner-friendly — promise! 😄</p>
+<hr/>
+<h2>📥 Step 1: Install Rust</h2>
+<p>Rust has an official installer that works on <strong>macOS</strong>, <strong>Linux</strong>, and <strong>Windows</strong>.</p>
+<div class="relative my-6 border rounded-lg overflow-hidden text-sm font-mono"><div class="flex justify-between items-center px-4 py-2 border-b bg-muted/30"><div class="flex items-center gap-2"><span class="text-xs font-semibold px-2 py-1 rounded bg-primary/10 text-primary">bash</span></div><div><button 
+    class="inline-flex items-center active:scale-90 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 copy-button"
+    onclick="var codeEl = document.getElementById('code-block-km1auuz'); var code = codeEl.textContent || codeEl.innerText; navigator.clipboard.writeText(code); var btn = this; var oldHTML = btn.innerHTML; btn.innerHTML = '<svg width=\'16\' height=\'16\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'text-green-500\'><polyline points=\'20 6 9 17 4 12\'></polyline></svg><span class=\'text-xs ml-2\'>Copied!</span>'; setTimeout(function(){ btn.innerHTML = oldHTML; }, 1500); return false;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+      <span class="text-xs">Copy</span>
+    </button></div></div><div class="shiki overflow-x-auto p-4 bg-transparent m-0"><div id="code-block-km1auuz" class="block text-sm leading-relaxed"><style>
+        .shiki .line { display: block; }
+        .shiki code { display: flex; flex-direction: column; }
+        
+          .highlighted-line { background-color: rgba(255, 255, 0, 0.15); border-left: 3px solid rgba(255, 255, 0, 0.5); }
+          .focus-line { background-color: rgba(58, 130, 247, 0.15); border-left: 3px solid rgba(58, 130, 247, 0.5); }
+          .line-number { color: rgba(255, 255, 255, 0.5); font-size: 0.8em; margin-right: 10px; }
+          .annotation { color: rgba(255, 255, 255, 0.7); font-style: italic; margin-left: 8px; padding: 0 4px; }
+          .annotation-info { background-color: rgba(58, 130, 247, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
+          .annotation-warning { background-color: rgba(255, 152, 0, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
+          .annotation-error { background-color: rgba(244, 67, 54, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
+          .word-highlight {
+            background: rgba(120,130,150,0.22);
+            color: #fff;
+            border-radius: 4px;
+            padding: 1px 4px;
+            font-weight: 500;
+            box-shadow: 0 1px 2px 0 rgba(0,0,0,0.04);
+            transition: background 0.2s;
+          }
+        
+      </style><pre class="shiki github-dark" style="background-color:#24292e;color:#e1e4e8" tabindex="0"><code><span class="line"><span style="color:#B392F0">curl</span><span style="color:#79B8FF"> --proto</span><span style="color:#9ECBFF"> '=https'</span><span style="color:#79B8FF"> --tlsv1.2</span><span style="color:#79B8FF"> -sSf</span><span style="color:#9ECBFF"> https://sh.rustup.rs</span><span style="color:#F97583"> |</span><span style="color:#B392F0"> sh</span></span></code></pre></div></div></div>
+<div data-slot="alert" role="alert" class="relative w-full rounded-lg border px-4 py-3 text-sm grid has-[&gt;svg]:grid-cols-[calc(var(--spacing)*4)_1fr] grid-cols-[0_1fr] has-[&gt;svg]:gap-x-3 gap-y-0.5 items-start [&amp;&gt;svg]:size-4 [&amp;&gt;svg]:translate-y-0.5 [&amp;&gt;svg]:text-current"><div data-slot="alert-description" class="text-muted-foreground col-start-2 grid justify-items-start gap-1 text-sm [&amp;_p]:leading-relaxed"><p>✅ This will install <code>rustc</code> (the compiler), <code>cargo</code> (the package manager), and <code>rustup</code> (the version manager).</p></div></div>
+<p>After it&#x27;s done, restart your terminal and check:</p>
+<div class="relative my-6 border rounded-lg overflow-hidden text-sm font-mono"><div class="flex justify-between items-center px-4 py-2 border-b bg-muted/30"><div class="flex items-center gap-2"><span class="text-xs font-semibold px-2 py-1 rounded bg-primary/10 text-primary">bash</span></div><div><button 
+    class="inline-flex items-center active:scale-90 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 copy-button"
+    onclick="var codeEl = document.getElementById('code-block-stxzfhq'); var code = codeEl.textContent || codeEl.innerText; navigator.clipboard.writeText(code); var btn = this; var oldHTML = btn.innerHTML; btn.innerHTML = '<svg width=\'16\' height=\'16\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'text-green-500\'><polyline points=\'20 6 9 17 4 12\'></polyline></svg><span class=\'text-xs ml-2\'>Copied!</span>'; setTimeout(function(){ btn.innerHTML = oldHTML; }, 1500); return false;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+      <span class="text-xs">Copy</span>
+    </button></div></div><div class="shiki overflow-x-auto p-4 bg-transparent m-0"><div id="code-block-stxzfhq" class="block text-sm leading-relaxed"><style>
+        .shiki .line { display: block; }
+        .shiki code { display: flex; flex-direction: column; }
+        
+          .highlighted-line { background-color: rgba(255, 255, 0, 0.15); border-left: 3px solid rgba(255, 255, 0, 0.5); }
+          .focus-line { background-color: rgba(58, 130, 247, 0.15); border-left: 3px solid rgba(58, 130, 247, 0.5); }
+          .line-number { color: rgba(255, 255, 255, 0.5); font-size: 0.8em; margin-right: 10px; }
+          .annotation { color: rgba(255, 255, 255, 0.7); font-style: italic; margin-left: 8px; padding: 0 4px; }
+          .annotation-info { background-color: rgba(58, 130, 247, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
+          .annotation-warning { background-color: rgba(255, 152, 0, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
+          .annotation-error { background-color: rgba(244, 67, 54, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
+          .word-highlight {
+            background: rgba(120,130,150,0.22);
+            color: #fff;
+            border-radius: 4px;
+            padding: 1px 4px;
+            font-weight: 500;
+            box-shadow: 0 1px 2px 0 rgba(0,0,0,0.04);
+            transition: background 0.2s;
+          }
+        
+      </style><pre class="shiki github-dark" style="background-color:#24292e;color:#e1e4e8" tabindex="0"><code><span class="line"><span style="color:#B392F0">rustc</span><span style="color:#79B8FF"> --version</span></span></code></pre></div></div></div>
+<div class="relative my-6 border rounded-lg overflow-hidden text-sm font-mono"><div class="flex justify-between items-center px-4 py-2 border-b bg-muted/30"><div class="flex items-center gap-2"><span class="text-xs font-semibold px-2 py-1 rounded bg-primary/10 text-primary">bash</span></div><div><button 
+    class="inline-flex items-center active:scale-90 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 copy-button"
+    onclick="var codeEl = document.getElementById('code-block-e7lknxt'); var code = codeEl.textContent || codeEl.innerText; navigator.clipboard.writeText(code); var btn = this; var oldHTML = btn.innerHTML; btn.innerHTML = '<svg width=\'16\' height=\'16\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'text-green-500\'><polyline points=\'20 6 9 17 4 12\'></polyline></svg><span class=\'text-xs ml-2\'>Copied!</span>'; setTimeout(function(){ btn.innerHTML = oldHTML; }, 1500); return false;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+      <span class="text-xs">Copy</span>
+    </button></div></div><div class="shiki overflow-x-auto p-4 bg-transparent m-0"><div id="code-block-e7lknxt" class="block text-sm leading-relaxed"><style>
+        .shiki .line { display: block; }
+        .shiki code { display: flex; flex-direction: column; }
+        
+          .highlighted-line { background-color: rgba(255, 255, 0, 0.15); border-left: 3px solid rgba(255, 255, 0, 0.5); }
+          .focus-line { background-color: rgba(58, 130, 247, 0.15); border-left: 3px solid rgba(58, 130, 247, 0.5); }
+          .line-number { color: rgba(255, 255, 255, 0.5); font-size: 0.8em; margin-right: 10px; }
+          .annotation { color: rgba(255, 255, 255, 0.7); font-style: italic; margin-left: 8px; padding: 0 4px; }
+          .annotation-info { background-color: rgba(58, 130, 247, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
+          .annotation-warning { background-color: rgba(255, 152, 0, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
+          .annotation-error { background-color: rgba(244, 67, 54, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
+          .word-highlight {
+            background: rgba(120,130,150,0.22);
+            color: #fff;
+            border-radius: 4px;
+            padding: 1px 4px;
+            font-weight: 500;
+            box-shadow: 0 1px 2px 0 rgba(0,0,0,0.04);
+            transition: background 0.2s;
+          }
+        
+      </style><pre class="shiki github-dark" style="background-color:#24292e;color:#e1e4e8" tabindex="0"><code><span class="line"><span style="color:#B392F0">cargo</span><span style="color:#79B8FF"> --version</span></span></code></pre></div></div></div>
+<p>Boom 💥! You&#x27;re ready.</p>
+<hr/>
+<h2>📂 Step 2: Create Your First Project</h2>
+<p>Let’s make a simple Rust app (no setup hell here 😌):</p>
+<div class="relative my-6 border rounded-lg overflow-hidden text-sm font-mono"><div class="flex justify-between items-center px-4 py-2 border-b bg-muted/30"><div class="flex items-center gap-2"><span class="text-xs font-semibold px-2 py-1 rounded bg-primary/10 text-primary">bash</span></div><div><button 
+    class="inline-flex items-center active:scale-90 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 copy-button"
+    onclick="var codeEl = document.getElementById('code-block-nyal8p9'); var code = codeEl.textContent || codeEl.innerText; navigator.clipboard.writeText(code); var btn = this; var oldHTML = btn.innerHTML; btn.innerHTML = '<svg width=\'16\' height=\'16\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'text-green-500\'><polyline points=\'20 6 9 17 4 12\'></polyline></svg><span class=\'text-xs ml-2\'>Copied!</span>'; setTimeout(function(){ btn.innerHTML = oldHTML; }, 1500); return false;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+      <span class="text-xs">Copy</span>
+    </button></div></div><div class="shiki overflow-x-auto p-4 bg-transparent m-0"><div id="code-block-nyal8p9" class="block text-sm leading-relaxed"><style>
+        .shiki .line { display: block; }
+        .shiki code { display: flex; flex-direction: column; }
+        
+          .highlighted-line { background-color: rgba(255, 255, 0, 0.15); border-left: 3px solid rgba(255, 255, 0, 0.5); }
+          .focus-line { background-color: rgba(58, 130, 247, 0.15); border-left: 3px solid rgba(58, 130, 247, 0.5); }
+          .line-number { color: rgba(255, 255, 255, 0.5); font-size: 0.8em; margin-right: 10px; }
+          .annotation { color: rgba(255, 255, 255, 0.7); font-style: italic; margin-left: 8px; padding: 0 4px; }
+          .annotation-info { background-color: rgba(58, 130, 247, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
+          .annotation-warning { background-color: rgba(255, 152, 0, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
+          .annotation-error { background-color: rgba(244, 67, 54, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
+          .word-highlight {
+            background: rgba(120,130,150,0.22);
+            color: #fff;
+            border-radius: 4px;
+            padding: 1px 4px;
+            font-weight: 500;
+            box-shadow: 0 1px 2px 0 rgba(0,0,0,0.04);
+            transition: background 0.2s;
+          }
+        
+      </style><pre class="shiki github-dark" style="background-color:#24292e;color:#e1e4e8" tabindex="0"><code><span class="line"><span style="color:#B392F0">cargo</span><span style="color:#9ECBFF"> new</span><span style="color:#9ECBFF"> hello-rust</span></span>
+<span class="line"><span style="color:#79B8FF">cd</span><span style="color:#9ECBFF"> hello-rust</span></span></code></pre></div></div></div>
+<p>You&#x27;ll see:</p>
+<pre><div class="pre-rendered-code-block"><pre><code>hello-rust/
+ ┣ Cargo.toml       // Project config &amp; dependencies
+ ┗ src/
+   ┗ main.rs        // Your code lives here
+</code></pre></div></pre>
+<p>Now run your app:</p>
+<div class="relative my-6 border rounded-lg overflow-hidden text-sm font-mono"><div class="flex justify-between items-center px-4 py-2 border-b bg-muted/30"><div class="flex items-center gap-2"><span class="text-xs font-semibold px-2 py-1 rounded bg-primary/10 text-primary">bash</span></div><div><button 
+    class="inline-flex items-center active:scale-90 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 copy-button"
+    onclick="var codeEl = document.getElementById('code-block-jytfrns'); var code = codeEl.textContent || codeEl.innerText; navigator.clipboard.writeText(code); var btn = this; var oldHTML = btn.innerHTML; btn.innerHTML = '<svg width=\'16\' height=\'16\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'text-green-500\'><polyline points=\'20 6 9 17 4 12\'></polyline></svg><span class=\'text-xs ml-2\'>Copied!</span>'; setTimeout(function(){ btn.innerHTML = oldHTML; }, 1500); return false;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+      <span class="text-xs">Copy</span>
+    </button></div></div><div class="shiki overflow-x-auto p-4 bg-transparent m-0"><div id="code-block-jytfrns" class="block text-sm leading-relaxed"><style>
+        .shiki .line { display: block; }
+        .shiki code { display: flex; flex-direction: column; }
+        
+          .highlighted-line { background-color: rgba(255, 255, 0, 0.15); border-left: 3px solid rgba(255, 255, 0, 0.5); }
+          .focus-line { background-color: rgba(58, 130, 247, 0.15); border-left: 3px solid rgba(58, 130, 247, 0.5); }
+          .line-number { color: rgba(255, 255, 255, 0.5); font-size: 0.8em; margin-right: 10px; }
+          .annotation { color: rgba(255, 255, 255, 0.7); font-style: italic; margin-left: 8px; padding: 0 4px; }
+          .annotation-info { background-color: rgba(58, 130, 247, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
+          .annotation-warning { background-color: rgba(255, 152, 0, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
+          .annotation-error { background-color: rgba(244, 67, 54, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
+          .word-highlight {
+            background: rgba(120,130,150,0.22);
+            color: #fff;
+            border-radius: 4px;
+            padding: 1px 4px;
+            font-weight: 500;
+            box-shadow: 0 1px 2px 0 rgba(0,0,0,0.04);
+            transition: background 0.2s;
+          }
+        
+      </style><pre class="shiki github-dark" style="background-color:#24292e;color:#e1e4e8" tabindex="0"><code><span class="line"><span style="color:#B392F0">cargo</span><span style="color:#9ECBFF"> run</span></span></code></pre></div></div></div>
+<p>And you’ll see:</p>
+<pre><div class="pre-rendered-code-block"><pre><code>Hello, world!
+</code></pre></div></pre>
+<p>🎉 Congrats — you just wrote and ran your first Rust program!</p>
+<hr/>
+<h2>🛠 What&#x27;s Next?</h2>
+<p>Here’s what you’ll learn next (don’t worry, it’s all broken down step-by-step in this guide):</p>
+<ul>
+<li>📦 What <code>cargo</code> actually does (hint: it’s magic)</li>
+<li>🧠 Variables, types, and functions in Rust</li>
+<li>🔐 Memory safety without garbage collection</li>
+<li>🧵 Ownership, borrowing, and lifetimes (explained with love, not fear)</li>
+<li>🧪 Testing your code</li>
+<li>🧰 Building command-line apps, APIs, and even web apps with Rust!</li>
+</ul>
+<hr/>
+<h2>💬 Why Rust?</h2>
+<ul>
+<li>🧠 <strong>Smart compiler</strong> that catches bugs before you even run your code</li>
+<li>🚀 <strong>Fast</strong> as C/C++ — but much safer</li>
+<li>📦 <strong>Rich ecosystem</strong> (<a href="https://crates.io" target="_blank" rel="noopener noreferrer">crates.io</a>)</li>
+<li>🤝 Backed by a great community, awesome docs, and real-world use (Dropbox, AWS, Discord, etc.)</li>
+</ul>
+<hr/>
+<h2>📚 Learn by Doing</h2>
+<p>This guide is hands-on. You’ll <strong>build real stuff</strong> while learning:</p>
+<ul>
+<li>A to-do app in the terminal 📝</li>
+<li>A basic API with <code>axum</code> 🌐</li>
+<li>A WASM-powered web app 💻</li>
+</ul>
+<hr/>
+<h2>❤️ Made for You</h2>
+<div data-slot="alert" role="alert" class="relative w-full rounded-lg border px-4 py-3 text-sm grid has-[&gt;svg]:grid-cols-[calc(var(--spacing)*4)_1fr] grid-cols-[0_1fr] has-[&gt;svg]:gap-x-3 gap-y-0.5 items-start [&amp;&gt;svg]:size-4 [&amp;&gt;svg]:translate-y-0.5 [&amp;&gt;svg]:text-current"><div data-slot="alert-description" class="text-muted-foreground col-start-2 grid justify-items-start gap-1 text-sm [&amp;_p]:leading-relaxed"><p>This Rust guide is:</p><ul><li>✅ Beginner-friendly</li><li>✅ No fluff, no walls of boring text</li><li>✅ Made with ❤️ by someone who struggled with “boring tutorials” too</li></ul></div></div>
+<hr/>
+<h2>🚀 Let’s Go</h2>
+<p>Ready to become a Rustacean?</p>
+<a href="#" data-slot="button" class="inline-flex items-center active:scale-90 justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-10 rounded-md px-6 has-[&gt;svg]:px-4">Start the next chapter: Understanding Cargo →</a>
+<p>Or if you’re a TL;DR kind of dev, jump right to the <a href="#">Quick Start Cheatsheet</a>.</p>
+<hr/>
+<blockquote><em>Want it more tailored to your tone or site design? Just drop me a bit more of your style (e.g. is this aimed at devs who hate theory? students? people scared of C++?), and I’ll adjust the vibe 💪</em></blockquote>
