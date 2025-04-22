@@ -20,33 +20,11 @@
 </ul>
 <div data-slot="alert" role="alert" class="relative w-full rounded-lg border px-4 py-3 text-sm grid has-[&gt;svg]:grid-cols-[calc(var(--spacing)*4)_1fr] grid-cols-[0_1fr] has-[&gt;svg]:gap-x-3 gap-y-0.5 items-start [&amp;&gt;svg]:size-4 [&amp;&gt;svg]:translate-y-0.5 [&amp;&gt;svg]:text-current"><div data-slot="alert-description" class="text-muted-foreground col-start-2 grid justify-items-start gap-1 text-sm [&amp;_p]:leading-relaxed"><p>Rust isn&#x27;t just for hardcore system engineers. It&#x27;s for <strong>anyone</strong> who wants to write fast, reliable code—and <strong>learn a ton</strong> along the way.</p></div></div>
 <p>Here&#x27;s your first Rust program:</p>
-<div class="relative my-6 border rounded-lg overflow-hidden text-sm font-mono"><div class="flex justify-between items-center px-4 py-2 border-b bg-muted/30"><div class="flex items-center gap-2"><span class="text-xs font-semibold px-2 py-1 rounded bg-primary/10 text-primary">rust</span></div><div><button 
-    class="inline-flex items-center active:scale-90 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 copy-button"
-    onclick="var codeEl = document.getElementById('code-block-z43wruk'); var code = codeEl.textContent || codeEl.innerText; navigator.clipboard.writeText(code); var btn = this; var oldHTML = btn.innerHTML; btn.innerHTML = '<svg width=\'16\' height=\'16\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'text-green-500\'><polyline points=\'20 6 9 17 4 12\'></polyline></svg><span class=\'text-xs ml-2\'>Copied!</span>'; setTimeout(function(){ btn.innerHTML = oldHTML; }, 1500); return false;">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-      <span class="text-xs">Copy</span>
-    </button></div></div><div class="shiki overflow-x-auto p-4 bg-transparent m-0"><div id="code-block-z43wruk" class="block text-sm leading-relaxed"><style>
-        .shiki .line { display: block; }
-        .shiki code { display: flex; flex-direction: column; }
-        
-          .highlighted-line { background-color: rgba(255, 255, 0, 0.15); border-left: 3px solid rgba(255, 255, 0, 0.5); }
-          .focus-line { background-color: rgba(58, 130, 247, 0.15); border-left: 3px solid rgba(58, 130, 247, 0.5); }
-          .line-number { color: rgba(255, 255, 255, 0.5); font-size: 0.8em; margin-right: 10px; }
-          .annotation { color: rgba(255, 255, 255, 0.7); font-style: italic; margin-left: 8px; padding: 0 4px; }
-          .annotation-info { background-color: rgba(58, 130, 247, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
-          .annotation-warning { background-color: rgba(255, 152, 0, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
-          .annotation-error { background-color: rgba(244, 67, 54, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
-          .word-highlight {
-            background: rgba(120,130,150,0.22);
-            color: #fff;
-            border-radius: 4px;
-            padding: 1px 4px;
-            font-weight: 500;
-            box-shadow: 0 1px 2px 0 rgba(0,0,0,0.04);
-            transition: background 0.2s;
-          }
-        
-      </style><pre class="shiki github-dark" style="background-color:#24292e;color:#e1e4e8" tabindex="0"><code><span class="line"><span style="color:#F97583">fn</span><span style="color:#B392F0"> main</span><span style="color:#E1E4E8">() {</span></span>
+<div class="relative my-6 border rounded-lg overflow-hidden text-sm font-mono code-block-container"><div class="flex justify-between items-center px-4 py-2 border-b bg-muted/30"><div class="flex items-center gap-2"><span class="text-xs font-semibold px-2 py-1 rounded bg-primary/10 text-primary">rust</span></div><button data-slot="button" class="inline-flex items-center active:scale-90 justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[&gt;svg]:px-2.5" data-copy="
+fn main() {
+  println!(&quot;Hello, Rustacean! 🦀&quot;);
+}
+"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span class="ml-2 text-xs">Copy</span></button></div><div class="shiki-container overflow-x-auto p-4 bg-transparent m-0"><div id="code-block-ncdhqj1" class="block text-sm leading-relaxed"><pre class="shiki shiki-dark github-dark" style="background-color:#24292e;color:#e1e4e8" tabindex="0"><code><span class="line"><span style="color:#F97583">fn</span><span style="color:#B392F0"> main</span><span style="color:#E1E4E8">() {</span></span>
 <span class="line"><span style="color:#B392F0">  println!</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"Hello, Rustacean! 🦀"</span><span style="color:#E1E4E8">);</span></span>
 <span class="line"><span style="color:#E1E4E8">}</span></span></code></pre></div></div></div>
 <p>This code defines the <strong>main</strong> function, which is the entry point of every Rust program. The <code>println!</code> macro prints a message to your terminal.</p>

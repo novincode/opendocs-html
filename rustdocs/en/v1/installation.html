@@ -1,36 +1,10 @@
 <h2>🚀 Installing Rust  <span data-slot="badge" class="inline-flex items-center justify-center rounded-md border px-2 py-0.5 text-xs font-medium w-fit whitespace-nowrap shrink-0 [&amp;&gt;svg]:size-3 gap-1 [&amp;&gt;svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden text-foreground [a&amp;]:hover:bg-accent [a&amp;]:hover:text-accent-foreground">Beginner Friendly</span></h2>
-<p>Welcome to your first step in becoming a Rustacean! 🦀 Whether you&#x27;re a complete beginner or coming from another language, getting Rust set up on your machine is fast and easy. Let’s get you coding in no time.</p>
+<p>Welcome to your first step in becoming a Rustacean! 🦀 Whether you&#x27;re a complete beginner, or coming from another language, getting Rust set up on your machine is fast and easy. Let’s get you coding in no time.</p>
 <div data-slot="alert" role="alert" class="relative w-full rounded-lg border px-4 py-3 text-sm grid has-[&gt;svg]:grid-cols-[calc(var(--spacing)*4)_1fr] grid-cols-[0_1fr] has-[&gt;svg]:gap-x-3 gap-y-0.5 items-start [&amp;&gt;svg]:size-4 [&amp;&gt;svg]:translate-y-0.5 [&amp;&gt;svg]:text-current bg-card text-card-foreground"><div data-slot="alert-title" class="col-start-2 line-clamp-1 min-h-4 font-medium tracking-tight">Why use <code>rustup</code>?</div><div data-slot="alert-description" class="text-muted-foreground col-start-2 grid justify-items-start gap-1 text-sm [&amp;_p]:leading-relaxed"><ul><li>Installs Rust, Cargo (Rust’s package manager), and more in one go</li><li>Makes it easy to update or switch versions</li><li>Works across macOS, Linux, and Windows</li></ul></div></div>
 <h2>1. Install Rust</h2>
 <h3>macOS / Linux</h3>
 <p>Run this command in your terminal:</p>
-<div class="relative my-6 border rounded-lg overflow-hidden text-sm font-mono"><div class="flex justify-between items-center px-4 py-2 border-b bg-muted/30"><div class="flex items-center gap-2"><span class="text-xs font-semibold px-2 py-1 rounded bg-primary/10 text-primary">bash</span></div><div><button 
-    class="inline-flex items-center active:scale-90 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 copy-button"
-    onclick="var codeEl = document.getElementById('code-block-asl5oyy'); var code = codeEl.textContent || codeEl.innerText; navigator.clipboard.writeText(code); var btn = this; var oldHTML = btn.innerHTML; btn.innerHTML = '<svg width=\'16\' height=\'16\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'text-green-500\'><polyline points=\'20 6 9 17 4 12\'></polyline></svg><span class=\'text-xs ml-2\'>Copied!</span>'; setTimeout(function(){ btn.innerHTML = oldHTML; }, 1500); return false;">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-      <span class="text-xs">Copy</span>
-    </button></div></div><div class="shiki overflow-x-auto p-4 bg-transparent m-0"><div id="code-block-asl5oyy" class="block text-sm leading-relaxed"><style>
-        .shiki .line { display: block; }
-        .shiki code { display: flex; flex-direction: column; }
-        
-          .highlighted-line { background-color: rgba(255, 255, 0, 0.15); border-left: 3px solid rgba(255, 255, 0, 0.5); }
-          .focus-line { background-color: rgba(58, 130, 247, 0.15); border-left: 3px solid rgba(58, 130, 247, 0.5); }
-          .line-number { color: rgba(255, 255, 255, 0.5); font-size: 0.8em; margin-right: 10px; }
-          .annotation { color: rgba(255, 255, 255, 0.7); font-style: italic; margin-left: 8px; padding: 0 4px; }
-          .annotation-info { background-color: rgba(58, 130, 247, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
-          .annotation-warning { background-color: rgba(255, 152, 0, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
-          .annotation-error { background-color: rgba(244, 67, 54, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
-          .word-highlight {
-            background: rgba(120,130,150,0.22);
-            color: #fff;
-            border-radius: 4px;
-            padding: 1px 4px;
-            font-weight: 500;
-            box-shadow: 0 1px 2px 0 rgba(0,0,0,0.04);
-            transition: background 0.2s;
-          }
-        
-      </style><pre class="shiki github-dark" style="background-color:#24292e;color:#e1e4e8" tabindex="0"><code><span class="line"><span style="color:#B392F0">curl</span><span style="color:#79B8FF"> --proto</span><span style="color:#9ECBFF"> '=https'</span><span style="color:#79B8FF"> --tlsv1.2</span><span style="color:#79B8FF"> -sSf</span><span style="color:#9ECBFF"> https://sh.rustup.rs</span><span style="color:#F97583"> |</span><span style="color:#B392F0"> sh</span></span></code></pre></div></div></div>
+<div class="relative my-6 border rounded-lg overflow-hidden text-sm font-mono code-block-container"><div class="flex justify-between items-center px-4 py-2 border-b bg-muted/30"><div class="flex items-center gap-2"><span class="text-xs font-semibold px-2 py-1 rounded bg-primary/10 text-primary">bash</span></div><button data-slot="button" class="inline-flex items-center active:scale-90 justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[&gt;svg]:px-2.5" data-copy="curl --proto &#x27;=https&#x27; --tlsv1.2 -sSf https://sh.rustup.rs | sh"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span class="ml-2 text-xs">Copy</span></button></div><div class="shiki-container overflow-x-auto p-4 bg-transparent m-0"><div id="code-block-d01r1f3" class="block text-sm leading-relaxed"><pre class="shiki shiki-dark github-dark" style="background-color:#24292e;color:#e1e4e8" tabindex="0"><code><span class="line"><span style="color:#B392F0">curl</span><span style="color:#79B8FF"> --proto</span><span style="color:#9ECBFF"> '=https'</span><span style="color:#79B8FF"> --tlsv1.2</span><span style="color:#79B8FF"> -sSf</span><span style="color:#9ECBFF"> https://sh.rustup.rs</span><span style="color:#F97583"> |</span><span style="color:#B392F0"> sh</span></span></code></pre></div></div></div>
 <h3>Windows</h3>
 <p>Download and run the <a href="https://win.rustup.rs" target="_blank" rel="noopener">Rust installer for Windows</a>.</p>
 <h2>2. Follow the Prompts</h2>
@@ -42,176 +16,20 @@
 <h2>3. Restart Your Terminal</h2>
 <p>To ensure your shell recognizes the new commands, <strong>close and reopen</strong> your terminal.</p>
 <h2>4. Verify Your Installation</h2>
-<div class="relative my-6 border rounded-lg overflow-hidden text-sm font-mono"><div class="flex justify-between items-center px-4 py-2 border-b bg-muted/30"><div class="flex items-center gap-2"><span class="text-xs font-semibold px-2 py-1 rounded bg-primary/10 text-primary">bash</span></div><div><button 
-    class="inline-flex items-center active:scale-90 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 copy-button"
-    onclick="var codeEl = document.getElementById('code-block-5uuy78y'); var code = codeEl.textContent || codeEl.innerText; navigator.clipboard.writeText(code); var btn = this; var oldHTML = btn.innerHTML; btn.innerHTML = '<svg width=\'16\' height=\'16\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'text-green-500\'><polyline points=\'20 6 9 17 4 12\'></polyline></svg><span class=\'text-xs ml-2\'>Copied!</span>'; setTimeout(function(){ btn.innerHTML = oldHTML; }, 1500); return false;">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-      <span class="text-xs">Copy</span>
-    </button></div></div><div class="shiki overflow-x-auto p-4 bg-transparent m-0"><div id="code-block-5uuy78y" class="block text-sm leading-relaxed"><style>
-        .shiki .line { display: block; }
-        .shiki code { display: flex; flex-direction: column; }
-        
-          .highlighted-line { background-color: rgba(255, 255, 0, 0.15); border-left: 3px solid rgba(255, 255, 0, 0.5); }
-          .focus-line { background-color: rgba(58, 130, 247, 0.15); border-left: 3px solid rgba(58, 130, 247, 0.5); }
-          .line-number { color: rgba(255, 255, 255, 0.5); font-size: 0.8em; margin-right: 10px; }
-          .annotation { color: rgba(255, 255, 255, 0.7); font-style: italic; margin-left: 8px; padding: 0 4px; }
-          .annotation-info { background-color: rgba(58, 130, 247, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
-          .annotation-warning { background-color: rgba(255, 152, 0, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
-          .annotation-error { background-color: rgba(244, 67, 54, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
-          .word-highlight {
-            background: rgba(120,130,150,0.22);
-            color: #fff;
-            border-radius: 4px;
-            padding: 1px 4px;
-            font-weight: 500;
-            box-shadow: 0 1px 2px 0 rgba(0,0,0,0.04);
-            transition: background 0.2s;
-          }
-        
-      </style><pre class="shiki github-dark" style="background-color:#24292e;color:#e1e4e8" tabindex="0"><code><span class="line"><span style="color:#B392F0">rustc</span><span style="color:#79B8FF"> --version</span></span></code></pre></div></div></div>
-<div class="relative my-6 border rounded-lg overflow-hidden text-sm font-mono"><div class="flex justify-between items-center px-4 py-2 border-b bg-muted/30"><div class="flex items-center gap-2"><span class="text-xs font-semibold px-2 py-1 rounded bg-primary/10 text-primary">bash</span></div><div><button 
-    class="inline-flex items-center active:scale-90 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 copy-button"
-    onclick="var codeEl = document.getElementById('code-block-nr9r4u7'); var code = codeEl.textContent || codeEl.innerText; navigator.clipboard.writeText(code); var btn = this; var oldHTML = btn.innerHTML; btn.innerHTML = '<svg width=\'16\' height=\'16\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'text-green-500\'><polyline points=\'20 6 9 17 4 12\'></polyline></svg><span class=\'text-xs ml-2\'>Copied!</span>'; setTimeout(function(){ btn.innerHTML = oldHTML; }, 1500); return false;">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-      <span class="text-xs">Copy</span>
-    </button></div></div><div class="shiki overflow-x-auto p-4 bg-transparent m-0"><div id="code-block-nr9r4u7" class="block text-sm leading-relaxed"><style>
-        .shiki .line { display: block; }
-        .shiki code { display: flex; flex-direction: column; }
-        
-          .highlighted-line { background-color: rgba(255, 255, 0, 0.15); border-left: 3px solid rgba(255, 255, 0, 0.5); }
-          .focus-line { background-color: rgba(58, 130, 247, 0.15); border-left: 3px solid rgba(58, 130, 247, 0.5); }
-          .line-number { color: rgba(255, 255, 255, 0.5); font-size: 0.8em; margin-right: 10px; }
-          .annotation { color: rgba(255, 255, 255, 0.7); font-style: italic; margin-left: 8px; padding: 0 4px; }
-          .annotation-info { background-color: rgba(58, 130, 247, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
-          .annotation-warning { background-color: rgba(255, 152, 0, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
-          .annotation-error { background-color: rgba(244, 67, 54, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
-          .word-highlight {
-            background: rgba(120,130,150,0.22);
-            color: #fff;
-            border-radius: 4px;
-            padding: 1px 4px;
-            font-weight: 500;
-            box-shadow: 0 1px 2px 0 rgba(0,0,0,0.04);
-            transition: background 0.2s;
-          }
-        
-      </style><pre class="shiki github-dark" style="background-color:#24292e;color:#e1e4e8" tabindex="0"><code><span class="line"><span style="color:#B392F0">cargo</span><span style="color:#79B8FF"> --version</span></span></code></pre></div></div></div>
+<div class="relative my-6 border rounded-lg overflow-hidden text-sm font-mono code-block-container"><div class="flex justify-between items-center px-4 py-2 border-b bg-muted/30"><div class="flex items-center gap-2"><span class="text-xs font-semibold px-2 py-1 rounded bg-primary/10 text-primary">bash</span></div><button data-slot="button" class="inline-flex items-center active:scale-90 justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[&gt;svg]:px-2.5" data-copy="rustc --version"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span class="ml-2 text-xs">Copy</span></button></div><div class="shiki-container overflow-x-auto p-4 bg-transparent m-0"><div id="code-block-nk7niz2" class="block text-sm leading-relaxed"><pre class="shiki shiki-dark github-dark" style="background-color:#24292e;color:#e1e4e8" tabindex="0"><code><span class="line"><span style="color:#B392F0">rustc</span><span style="color:#79B8FF"> --version</span></span></code></pre></div></div></div>
+<div class="relative my-6 border rounded-lg overflow-hidden text-sm font-mono code-block-container"><div class="flex justify-between items-center px-4 py-2 border-b bg-muted/30"><div class="flex items-center gap-2"><span class="text-xs font-semibold px-2 py-1 rounded bg-primary/10 text-primary">bash</span></div><button data-slot="button" class="inline-flex items-center active:scale-90 justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[&gt;svg]:px-2.5" data-copy="cargo --version"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span class="ml-2 text-xs">Copy</span></button></div><div class="shiki-container overflow-x-auto p-4 bg-transparent m-0"><div id="code-block-lrz9n30" class="block text-sm leading-relaxed"><pre class="shiki shiki-dark github-dark" style="background-color:#24292e;color:#e1e4e8" tabindex="0"><code><span class="line"><span style="color:#B392F0">cargo</span><span style="color:#79B8FF"> --version</span></span></code></pre></div></div></div>
 <p>If you see something like <code>rustc 1.77.0</code>, you’re golden! 🌟</p>
 <h2>5. (Optional) Add Rust to PATH</h2>
 <p>If you get a <code>command not found</code> error after installation:</p>
 <h3>macOS / Linux</h3>
-<div class="relative my-6 border rounded-lg overflow-hidden text-sm font-mono"><div class="flex justify-between items-center px-4 py-2 border-b bg-muted/30"><div class="flex items-center gap-2"><span class="text-xs font-semibold px-2 py-1 rounded bg-primary/10 text-primary">bash</span></div><div><button 
-    class="inline-flex items-center active:scale-90 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 copy-button"
-    onclick="var codeEl = document.getElementById('code-block-3abo9wm'); var code = codeEl.textContent || codeEl.innerText; navigator.clipboard.writeText(code); var btn = this; var oldHTML = btn.innerHTML; btn.innerHTML = '<svg width=\'16\' height=\'16\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'text-green-500\'><polyline points=\'20 6 9 17 4 12\'></polyline></svg><span class=\'text-xs ml-2\'>Copied!</span>'; setTimeout(function(){ btn.innerHTML = oldHTML; }, 1500); return false;">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-      <span class="text-xs">Copy</span>
-    </button></div></div><div class="shiki overflow-x-auto p-4 bg-transparent m-0"><div id="code-block-3abo9wm" class="block text-sm leading-relaxed"><style>
-        .shiki .line { display: block; }
-        .shiki code { display: flex; flex-direction: column; }
-        
-          .highlighted-line { background-color: rgba(255, 255, 0, 0.15); border-left: 3px solid rgba(255, 255, 0, 0.5); }
-          .focus-line { background-color: rgba(58, 130, 247, 0.15); border-left: 3px solid rgba(58, 130, 247, 0.5); }
-          .line-number { color: rgba(255, 255, 255, 0.5); font-size: 0.8em; margin-right: 10px; }
-          .annotation { color: rgba(255, 255, 255, 0.7); font-style: italic; margin-left: 8px; padding: 0 4px; }
-          .annotation-info { background-color: rgba(58, 130, 247, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
-          .annotation-warning { background-color: rgba(255, 152, 0, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
-          .annotation-error { background-color: rgba(244, 67, 54, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
-          .word-highlight {
-            background: rgba(120,130,150,0.22);
-            color: #fff;
-            border-radius: 4px;
-            padding: 1px 4px;
-            font-weight: 500;
-            box-shadow: 0 1px 2px 0 rgba(0,0,0,0.04);
-            transition: background 0.2s;
-          }
-        
-      </style><pre class="shiki github-dark" style="background-color:#24292e;color:#e1e4e8" tabindex="0"><code><span class="line"><span style="color:#79B8FF">source</span><span style="color:#E1E4E8"> $HOME</span><span style="color:#9ECBFF">/.cargo/env</span></span></code></pre></div></div></div>
+<div class="relative my-6 border rounded-lg overflow-hidden text-sm font-mono code-block-container"><div class="flex justify-between items-center px-4 py-2 border-b bg-muted/30"><div class="flex items-center gap-2"><span class="text-xs font-semibold px-2 py-1 rounded bg-primary/10 text-primary">bash</span></div><button data-slot="button" class="inline-flex items-center active:scale-90 justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[&gt;svg]:px-2.5" data-copy="source $HOME/.cargo/env"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span class="ml-2 text-xs">Copy</span></button></div><div class="shiki-container overflow-x-auto p-4 bg-transparent m-0"><div id="code-block-bl9t84y" class="block text-sm leading-relaxed"><pre class="shiki shiki-dark github-dark" style="background-color:#24292e;color:#e1e4e8" tabindex="0"><code><span class="line"><span style="color:#79B8FF">source</span><span style="color:#E1E4E8"> $HOME</span><span style="color:#9ECBFF">/.cargo/env</span></span></code></pre></div></div></div>
 <h3>Windows</h3>
 <p>Restart the terminal or add <code>%USERPROFILE%.cargo\bin</code> to your system environment variables.</p>
 <h2>6. Keeping Rust Up to Date</h2>
 <p>To update Rust:</p>
-<div class="relative my-6 border rounded-lg overflow-hidden text-sm font-mono"><div class="flex justify-between items-center px-4 py-2 border-b bg-muted/30"><div class="flex items-center gap-2"><span class="text-xs font-semibold px-2 py-1 rounded bg-primary/10 text-primary">bash</span></div><div><button 
-    class="inline-flex items-center active:scale-90 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 copy-button"
-    onclick="var codeEl = document.getElementById('code-block-ro8txpo'); var code = codeEl.textContent || codeEl.innerText; navigator.clipboard.writeText(code); var btn = this; var oldHTML = btn.innerHTML; btn.innerHTML = '<svg width=\'16\' height=\'16\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'text-green-500\'><polyline points=\'20 6 9 17 4 12\'></polyline></svg><span class=\'text-xs ml-2\'>Copied!</span>'; setTimeout(function(){ btn.innerHTML = oldHTML; }, 1500); return false;">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-      <span class="text-xs">Copy</span>
-    </button></div></div><div class="shiki overflow-x-auto p-4 bg-transparent m-0"><div id="code-block-ro8txpo" class="block text-sm leading-relaxed"><style>
-        .shiki .line { display: block; }
-        .shiki code { display: flex; flex-direction: column; }
-        
-          .highlighted-line { background-color: rgba(255, 255, 0, 0.15); border-left: 3px solid rgba(255, 255, 0, 0.5); }
-          .focus-line { background-color: rgba(58, 130, 247, 0.15); border-left: 3px solid rgba(58, 130, 247, 0.5); }
-          .line-number { color: rgba(255, 255, 255, 0.5); font-size: 0.8em; margin-right: 10px; }
-          .annotation { color: rgba(255, 255, 255, 0.7); font-style: italic; margin-left: 8px; padding: 0 4px; }
-          .annotation-info { background-color: rgba(58, 130, 247, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
-          .annotation-warning { background-color: rgba(255, 152, 0, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
-          .annotation-error { background-color: rgba(244, 67, 54, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
-          .word-highlight {
-            background: rgba(120,130,150,0.22);
-            color: #fff;
-            border-radius: 4px;
-            padding: 1px 4px;
-            font-weight: 500;
-            box-shadow: 0 1px 2px 0 rgba(0,0,0,0.04);
-            transition: background 0.2s;
-          }
-        
-      </style><pre class="shiki github-dark" style="background-color:#24292e;color:#e1e4e8" tabindex="0"><code><span class="line"><span style="color:#B392F0">rustup</span><span style="color:#9ECBFF"> update</span></span></code></pre></div></div></div>
+<div class="relative my-6 border rounded-lg overflow-hidden text-sm font-mono code-block-container"><div class="flex justify-between items-center px-4 py-2 border-b bg-muted/30"><div class="flex items-center gap-2"><span class="text-xs font-semibold px-2 py-1 rounded bg-primary/10 text-primary">bash</span></div><button data-slot="button" class="inline-flex items-center active:scale-90 justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[&gt;svg]:px-2.5" data-copy="rustup update"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span class="ml-2 text-xs">Copy</span></button></div><div class="shiki-container overflow-x-auto p-4 bg-transparent m-0"><div id="code-block-ts24oia" class="block text-sm leading-relaxed"><pre class="shiki shiki-dark github-dark" style="background-color:#24292e;color:#e1e4e8" tabindex="0"><code><span class="line"><span style="color:#B392F0">rustup</span><span style="color:#9ECBFF"> update</span></span></code></pre></div></div></div>
 <p>To install nightly or switch versions:</p>
-<div class="relative my-6 border rounded-lg overflow-hidden text-sm font-mono"><div class="flex justify-between items-center px-4 py-2 border-b bg-muted/30"><div class="flex items-center gap-2"><span class="text-xs font-semibold px-2 py-1 rounded bg-primary/10 text-primary">bash</span></div><div><button 
-    class="inline-flex items-center active:scale-90 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 copy-button"
-    onclick="var codeEl = document.getElementById('code-block-cwq3t3s'); var code = codeEl.textContent || codeEl.innerText; navigator.clipboard.writeText(code); var btn = this; var oldHTML = btn.innerHTML; btn.innerHTML = '<svg width=\'16\' height=\'16\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'text-green-500\'><polyline points=\'20 6 9 17 4 12\'></polyline></svg><span class=\'text-xs ml-2\'>Copied!</span>'; setTimeout(function(){ btn.innerHTML = oldHTML; }, 1500); return false;">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-      <span class="text-xs">Copy</span>
-    </button></div></div><div class="shiki overflow-x-auto p-4 bg-transparent m-0"><div id="code-block-cwq3t3s" class="block text-sm leading-relaxed"><style>
-        .shiki .line { display: block; }
-        .shiki code { display: flex; flex-direction: column; }
-        
-          .highlighted-line { background-color: rgba(255, 255, 0, 0.15); border-left: 3px solid rgba(255, 255, 0, 0.5); }
-          .focus-line { background-color: rgba(58, 130, 247, 0.15); border-left: 3px solid rgba(58, 130, 247, 0.5); }
-          .line-number { color: rgba(255, 255, 255, 0.5); font-size: 0.8em; margin-right: 10px; }
-          .annotation { color: rgba(255, 255, 255, 0.7); font-style: italic; margin-left: 8px; padding: 0 4px; }
-          .annotation-info { background-color: rgba(58, 130, 247, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
-          .annotation-warning { background-color: rgba(255, 152, 0, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
-          .annotation-error { background-color: rgba(244, 67, 54, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
-          .word-highlight {
-            background: rgba(120,130,150,0.22);
-            color: #fff;
-            border-radius: 4px;
-            padding: 1px 4px;
-            font-weight: 500;
-            box-shadow: 0 1px 2px 0 rgba(0,0,0,0.04);
-            transition: background 0.2s;
-          }
-        
-      </style><pre class="shiki github-dark" style="background-color:#24292e;color:#e1e4e8" tabindex="0"><code><span class="line"><span style="color:#B392F0">rustup</span><span style="color:#9ECBFF"> install</span><span style="color:#9ECBFF"> nightly</span></span></code></pre></div></div></div>
-<div class="relative my-6 border rounded-lg overflow-hidden text-sm font-mono"><div class="flex justify-between items-center px-4 py-2 border-b bg-muted/30"><div class="flex items-center gap-2"><span class="text-xs font-semibold px-2 py-1 rounded bg-primary/10 text-primary">bash</span></div><div><button 
-    class="inline-flex items-center active:scale-90 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 copy-button"
-    onclick="var codeEl = document.getElementById('code-block-beqqyep'); var code = codeEl.textContent || codeEl.innerText; navigator.clipboard.writeText(code); var btn = this; var oldHTML = btn.innerHTML; btn.innerHTML = '<svg width=\'16\' height=\'16\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'text-green-500\'><polyline points=\'20 6 9 17 4 12\'></polyline></svg><span class=\'text-xs ml-2\'>Copied!</span>'; setTimeout(function(){ btn.innerHTML = oldHTML; }, 1500); return false;">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-      <span class="text-xs">Copy</span>
-    </button></div></div><div class="shiki overflow-x-auto p-4 bg-transparent m-0"><div id="code-block-beqqyep" class="block text-sm leading-relaxed"><style>
-        .shiki .line { display: block; }
-        .shiki code { display: flex; flex-direction: column; }
-        
-          .highlighted-line { background-color: rgba(255, 255, 0, 0.15); border-left: 3px solid rgba(255, 255, 0, 0.5); }
-          .focus-line { background-color: rgba(58, 130, 247, 0.15); border-left: 3px solid rgba(58, 130, 247, 0.5); }
-          .line-number { color: rgba(255, 255, 255, 0.5); font-size: 0.8em; margin-right: 10px; }
-          .annotation { color: rgba(255, 255, 255, 0.7); font-style: italic; margin-left: 8px; padding: 0 4px; }
-          .annotation-info { background-color: rgba(58, 130, 247, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
-          .annotation-warning { background-color: rgba(255, 152, 0, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
-          .annotation-error { background-color: rgba(244, 67, 54, 0.6); color: #fff; padding: 2px 4px; border-radius: 3px; }
-          .word-highlight {
-            background: rgba(120,130,150,0.22);
-            color: #fff;
-            border-radius: 4px;
-            padding: 1px 4px;
-            font-weight: 500;
-            box-shadow: 0 1px 2px 0 rgba(0,0,0,0.04);
-            transition: background 0.2s;
-          }
-        
-      </style><pre class="shiki github-dark" style="background-color:#24292e;color:#e1e4e8" tabindex="0"><code><span class="line"><span style="color:#B392F0">rustup</span><span style="color:#9ECBFF"> default</span><span style="color:#9ECBFF"> stable</span></span></code></pre></div></div></div>
+<div class="relative my-6 border rounded-lg overflow-hidden text-sm font-mono code-block-container"><div class="flex justify-between items-center px-4 py-2 border-b bg-muted/30"><div class="flex items-center gap-2"><span class="text-xs font-semibold px-2 py-1 rounded bg-primary/10 text-primary">bash</span></div><button data-slot="button" class="inline-flex items-center active:scale-90 justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[&gt;svg]:px-2.5" data-copy="rustup install nightly"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span class="ml-2 text-xs">Copy</span></button></div><div class="shiki-container overflow-x-auto p-4 bg-transparent m-0"><div id="code-block-cxliqxj" class="block text-sm leading-relaxed"><pre class="shiki shiki-dark github-dark" style="background-color:#24292e;color:#e1e4e8" tabindex="0"><code><span class="line"><span style="color:#B392F0">rustup</span><span style="color:#9ECBFF"> install</span><span style="color:#9ECBFF"> nightly</span></span></code></pre></div></div></div>
+<div class="relative my-6 border rounded-lg overflow-hidden text-sm font-mono code-block-container"><div class="flex justify-between items-center px-4 py-2 border-b bg-muted/30"><div class="flex items-center gap-2"><span class="text-xs font-semibold px-2 py-1 rounded bg-primary/10 text-primary">bash</span></div><button data-slot="button" class="inline-flex items-center active:scale-90 justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[&gt;svg]:px-2.5" data-copy="rustup default stable"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span class="ml-2 text-xs">Copy</span></button></div><div class="shiki-container overflow-x-auto p-4 bg-transparent m-0"><div id="code-block-bhdalqb" class="block text-sm leading-relaxed"><pre class="shiki shiki-dark github-dark" style="background-color:#24292e;color:#e1e4e8" tabindex="0"><code><span class="line"><span style="color:#B392F0">rustup</span><span style="color:#9ECBFF"> default</span><span style="color:#9ECBFF"> stable</span></span></code></pre></div></div></div>
 <div data-slot="alert" role="alert" class="relative w-full rounded-lg border px-4 py-3 text-sm grid has-[&gt;svg]:grid-cols-[calc(var(--spacing)*4)_1fr] grid-cols-[0_1fr] has-[&gt;svg]:gap-x-3 gap-y-0.5 items-start [&amp;&gt;svg]:size-4 [&amp;&gt;svg]:translate-y-0.5 [&amp;&gt;svg]:text-current"><div data-slot="alert-description" class="text-muted-foreground col-start-2 grid justify-items-start gap-1 text-sm [&amp;_p]:leading-relaxed"><p>🤓 <strong>Pro Tip:</strong> Not ready to install just yet? Try Rust in your browser: <a href="https://play.rust-lang.org" target="_blank" rel="noopener">play.rust-lang.org</a></p></div></div>
 <div data-slot="alert" role="alert" class="relative w-full rounded-lg border px-4 py-3 text-sm grid has-[&gt;svg]:grid-cols-[calc(var(--spacing)*4)_1fr] grid-cols-[0_1fr] has-[&gt;svg]:gap-x-3 gap-y-0.5 items-start [&amp;&gt;svg]:size-4 [&amp;&gt;svg]:translate-y-0.5 [&amp;&gt;svg]:text-current"><div data-slot="alert-description" class="text-muted-foreground col-start-2 grid justify-items-start gap-1 text-sm [&amp;_p]:leading-relaxed"><p>🎉 <strong>What’s Next?</strong> You’ve now got Rust on your system. Next up: writing your <strong>first “Hello, World!”</strong> and diving into projects with <code>cargo</code>.</p></div></div>
